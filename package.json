@@ -23,6 +23,8 @@
 	},
 	"dependencies": {
 		"citty": "^0.1.6",
+		"consola": "^3.2.3",
+		"giget": "^1.2.3",
 		"unbuild": "^2.0.0"
 	},
 	"devDependencies": {
