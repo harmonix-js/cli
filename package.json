@@ -1,0 +1,36 @@
+{
+	"name": "harmonix",
+	"version": "1.0.0",
+	"description": "⚡️ Harmony Framework CLI Experience",
+	"repository": "harmonyjs/cli",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": "./dist/index.mjs",
+		"./cli": "./bin/harmonix.mjs"
+	},
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"harmonix": "./bin/harmonix.mjs"
+	},
+	"files": [
+		"bin",
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild",
+		"harmonix": "node ./bin/harmonix.mjs"
+	},
+	"dependencies": {
+		"citty": "^0.1.6",
+		"unbuild": "^2.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.8",
+		"typescript": "^5.4.5"
+	},
+	"packageManager": "pnpm@9.0.0",
+	"engines": {
+		"node": "^16.10.0 || >=18.0.0"
+	}
+}
