@@ -11,7 +11,7 @@ export default defineCommand({
 		dir: {
 			type: 'positional',
 			description: 'Project directory',
-			default: 'harmony-starter'
+			default: 'harmony-app'
 		}
 	},
 	async run(ctx) {
