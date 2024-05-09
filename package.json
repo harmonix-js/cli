@@ -24,12 +24,12 @@
 	"dependencies": {
 		"citty": "^0.1.6",
 		"consola": "^3.2.3",
-		"giget": "^1.2.3",
-		"unbuild": "^2.0.0"
+		"giget": "^1.2.3"
 	},
 	"devDependencies": {
 		"@types/node": "^20.12.8",
-		"typescript": "^5.4.5"
+		"typescript": "^5.4.5",
+		"unbuild": "^2.0.0"
 	},
 	"packageManager": "pnpm@9.0.0",
 	"engines": {
