@@ -1,39 +1,41 @@
 {
-	"name": "harmonix",
-	"version": "0.0.1",
-	"description": "⚡️ Harmonix Framework CLI Experience",
-	"repository": "harmonix-js/cli",
-	"license": "MIT",
-	"type": "module",
-	"exports": {
-		".": "./dist/index.mjs",
-		"./cli": "./bin/harmonix.mjs"
-	},
-	"types": "./dist/index.d.ts",
-	"bin": {
-		"harmonix": "./bin/harmonix.mjs"
-	},
-	"files": [
-		"bin",
-		"dist"
-	],
-	"scripts": {
-		"prepack": "unbuild",
-		"harmonix": "node ./bin/harmonix.mjs"
-	},
-	"dependencies": {
-		"citty": "^0.1.6",
-		"consola": "^3.2.3",
-		"giget": "^1.2.3",
-		"@harmonix-js/core": "^0.0.1"
-	},
-	"devDependencies": {
-		"@types/node": "^20.12.11",
-		"typescript": "^5.4.5",
-		"unbuild": "^2.0.0"
-	},
-	"packageManager": "pnpm@9.0.0",
-	"engines": {
-		"node": "^16.10.0 || >=18.0.0"
-	}
+  "name": "harmonix",
+  "version": "0.0.1",
+  "description": "⚡️ Harmonix Framework CLI Experience",
+  "repository": "harmonix-js/cli",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/harmonix.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "harmonix": "./bin/harmonix.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "prettier --write .",
+    "prepack": "unbuild",
+    "harmonix": "node ./bin/harmonix.mjs"
+  },
+  "dependencies": {
+    "@harmonix-js/core": "^0.0.1",
+    "citty": "^0.1.6",
+    "consola": "^3.2.3",
+    "giget": "^1.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": "^16.10.0 || >=18.0.0"
+  }
 }
