@@ -1,3 +1,3 @@
-# Harmony CLI (harmonix)
+# Harmonix CLI
 
-⚡️ Harmony Framework CLI Experience
+⚡️ Harmonix Framework CLI Experience
