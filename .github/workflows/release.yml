@@ -22,11 +22,3 @@ jobs:
 
       - name: Build
         run: pnpm prepack
-
-      - name: Release
-        run: pnpm dlx changelogen@latest -- --release
-
-      - name: Publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
