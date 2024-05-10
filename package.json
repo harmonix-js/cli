@@ -1,6 +1,6 @@
 {
   "name": "@harmonix-js/cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "⚡️ Harmonix Framework CLI Experience",
   "repository": "harmonix-js/cli",
   "license": "MIT",
@@ -26,7 +26,8 @@
     "@harmonix-js/core": "^0.0.1",
     "citty": "^0.1.6",
     "consola": "^3.2.3",
-    "giget": "^1.2.3"
+    "giget": "^1.2.3",
+    "nypm": "^0.3.8"
   },
   "devDependencies": {
     "@types/node": "^20.12.11",
