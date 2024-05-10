@@ -1,8 +1,9 @@
-name: 🚀 release
+name: ⚙️ ci
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 jobs:
   release:
@@ -22,8 +23,3 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Release
-        run: pnpm publish --access public --tag latest
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-          NPM_CONFIG_PROVENANCE: true

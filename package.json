@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "lint": "prettier --write .",
-    "prepack": "unbuild",
+    "build": "unbuild",
     "harmonix": "node ./bin/harmonix.mjs"
   },
   "dependencies": {
