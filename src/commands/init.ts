@@ -20,33 +20,36 @@ export default defineCommand({
       dir: ctx.args.dir,
       cwd: '.'
     })
-		const packageManagerOptions: PackageManagerName[] = [
-			'bun',
-			'npm',
-			'pnpm',
-			'yarn'
-		]
-		const selectedPackageManager = await consola.prompt('Wich package manager would you like to use?', {
-			type: 'select',
-			options: packageManagerOptions
-		})
+    const packageManagerOptions: PackageManagerName[] = [
+      'bun',
+      'npm',
+      'pnpm',
+      'yarn'
+    ]
+    const selectedPackageManager = await consola.prompt(
+      'Wich package manager would you like to use?',
+      {
+        type: 'select',
+        options: packageManagerOptions
+      }
+    )
 
-		consola.start('Installing dependencies...')
-		try {
-			await installDependencies({
-				cwd: template.dir,
-				packageManager: {
-					name: selectedPackageManager,
-					command: selectedPackageManager
-				}
-			})
-		} catch (err) {
-			consola.error((err as Error).toString())
-			process.exit(1)
-		}
-		consola.success('Installation completed.')
+    consola.start('Installing dependencies...')
+    try {
+      await installDependencies({
+        cwd: template.dir,
+        packageManager: {
+          name: selectedPackageManager,
+          command: selectedPackageManager
+        }
+      })
+    } catch (err) {
+      consola.error((err as Error).toString())
+      process.exit(1)
+    }
+    consola.success('Installation completed.')
     consola.log(`✨ Harmonix project has been created. Next steps:`)
     consola.log(` › cd ${ctx.args.dir}`)
-    consola.log(' › npm run start')
+    consola.log(` › ${selectedPackageManager} run start`)
   }
 })
