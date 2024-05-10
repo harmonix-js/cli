@@ -7,13 +7,6 @@ on:
 
 jobs:
   release:
-    strategy:
-      matrix:
-        version:
-          - major
-          - minor
-          - patch
-
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.5
@@ -30,20 +23,10 @@ jobs:
       - name: Build
         run: pnpm prepack
 
-      - name: Update version
-        run: |
-          case ${{ matrix.version }} in
-            patch)
-              npm version patch ;;
-            minor)
-              npm version minor ;;
-            major)
-              npm version major ;;
-            *)
-              echo "Invalid version provided"; exit 1 ;;
-          esac
+      - name: Release
+        run: pnpm dlx changelogen@latest -- --release
 
-      # - name: Release
-      #   run: npm publish --access public
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+      - name: Publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
