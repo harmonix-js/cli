@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.0.5
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Update core version ([41579c2](https://github.com/harmonix-js/cli/commit/41579c2))
+
+### 🎨 Styles
+
+- Lint ([e269441](https://github.com/harmonix-js/cli/commit/e269441))
+
+### 🤖 CI
+
+- Remove git check when publishing ([245e45f](https://github.com/harmonix-js/cli/commit/245e45f))
+- Update release ([5704424](https://github.com/harmonix-js/cli/commit/5704424))
+- Update NODE_AUTH_TOKEN name ([369f24c](https://github.com/harmonix-js/cli/commit/369f24c))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+
 ## v0.0.4
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.3...v0.0.4)
