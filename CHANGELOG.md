@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.7
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.6...v0.0.7)
+
+### 🩹 Fixes
+
+- Update dependencies ([ecb28f1](https://github.com/harmonix-js/cli/commit/ecb28f1))
+
+### 🤖 CI
+
+- Dependencies updater ([8ce1648](https://github.com/harmonix-js/cli/commit/8ce1648))
+
+### ❤️ Contributors
+
+- Nethriis <david.aboou@epitech.eu>
+- Nethris <david.abou@epitech.eu>
+
 ## v0.0.6
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.5...v0.0.6)
