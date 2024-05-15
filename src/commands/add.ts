@@ -19,7 +19,7 @@ export default defineCommand({
   },
   async run(context) {
     let { type, name } = context.args
-    const types = ['command', 'event']
+    const types = ['command', 'event', 'context-menu', 'precondition']
 
     name = name.replace(/(\.ts)$/g, '')
     if (!types.includes(type)) {
@@ -77,7 +77,36 @@ export default defineCommand({
           '  // Code here\n' +
           '})'
       )
+    } else if (type === 'context-menu') {
+      const filePath = `./${type}s/${name}.ts`
+
+      if (fs.existsSync(filePath)) {
+        consola.error('Context menu already exists')
+        process.exit(1)
+      }
+      fs.writeFileSync(
+        filePath,
+        "import { defineContextMenu } from '@harmonix-js/core'\n\n" +
+          'export default defineContextMenu((interaction) => {\n' +
+          '  // Code here\n' +
+          '})'
+      )
+    } else if (type === 'precondition') {
+      const filePath = `./${type}s/${name}.ts`
+
+      if (fs.existsSync(filePath)) {
+        consola.error('Precondition already exists')
+        process.exit(1)
+      }
+      fs.writeFileSync(
+        filePath,
+        "import { definePrecondition } from '@harmonix-js/core'\n\n" +
+          'export default definePrecondition((harmonixOptions, entity) => {\n' +
+          '  // Code here\n' +
+          '})'
+      )
     }
+
     consola.success(`✨ ${type} ${name} has been created.`)
   }
 })
