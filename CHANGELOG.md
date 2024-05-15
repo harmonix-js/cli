@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.0.8
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.7...v0.0.8)
+
+### 🚀 Enhancements
+
+- Add context menu and precondition option to add command ([1f3b95a](https://github.com/harmonix-js/cli/commit/1f3b95a))
+
+### 🩹 Fixes
+
+- Unused files ([275da0d](https://github.com/harmonix-js/cli/commit/275da0d))
+- Pnpm-lock version ([3013255](https://github.com/harmonix-js/cli/commit/3013255))
+- Update dependencies ([b2eb1ca](https://github.com/harmonix-js/cli/commit/b2eb1ca))
+
+### ❤️ Contributors
+
+- Nethriis <david.aboou@epitech.eu>
+- Nethris <david.abou@epitech.eu>
+
 ## v0.0.7
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.6...v0.0.7)
