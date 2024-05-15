@@ -8,8 +8,8 @@ importers:
   .:
     dependencies:
       '@harmonix-js/core':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.6
+        version: 0.0.6
       citty:
         specifier: ^0.1.6
         version: 0.1.6
@@ -667,10 +667,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@harmonix-js/core@0.0.1':
+  '@harmonix-js/core@0.0.6':
     resolution:
       {
-        integrity: sha512-WttHFXqeCzO5QZ4TdkhRB6rIeaJZhWedmUKCxu7/hHx9L3em9Uk+g8sF4kDQEKpVyBnttAF+6LQW4KDDTmFv+Q==
+        integrity: sha512-xZOQJ/WGISksbYmGsX+96hJFQnysRaO5Yp/UH5KQDNYVBZ9/pfRutbsF1/FdnNsSZnQotCP2bhx9S5Y+xo8RaA==
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
 
@@ -2975,10 +2975,10 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
-  '@harmonix-js/core@0.0.1':
+  '@harmonix-js/core@0.0.6':
     dependencies:
       c12: 1.10.0
-      defu: 6.1.4
+      consola: 3.2.3
       discord.js: 14.15.2
       dotenv: 16.4.5
       globby: 14.0.1
