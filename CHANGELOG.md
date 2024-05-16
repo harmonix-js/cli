@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.9
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.8...v0.0.9)
+
+### 🩹 Fixes
+
+- Update dependencies ([b989d8f](https://github.com/harmonix-js/cli/commit/b989d8f))
+
+### ❤️ Contributors
+
+- Nethriis <david.aboou@epitech.eu>
+
 ## v0.0.8
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.7...v0.0.8)
