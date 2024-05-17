@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.10
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.9...v0.0.10)
+
+### 🩹 Fixes
+
+- Update dependencies ([ccde6be](https://github.com/harmonix-js/cli/commit/ccde6be))
+
+### 🎨 Styles
+
+- Lint ([0d9889f](https://github.com/harmonix-js/cli/commit/0d9889f))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+- Nethriis <david.aboou@epitech.eu>
+
 ## v0.0.9
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.8...v0.0.9)
