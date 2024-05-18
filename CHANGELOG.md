@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.11
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.10...v0.0.11)
+
+### 🩹 Fixes
+
+- Update dependencies ([d472112](https://github.com/harmonix-js/cli/commit/d472112))
+
+### ❤️ Contributors
+
+- Nethriis <david.abou@epitech.eu>
+
 ## v0.0.10
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.9...v0.0.10)
