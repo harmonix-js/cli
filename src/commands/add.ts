@@ -19,7 +19,15 @@ export default defineCommand({
   },
   async run(context) {
     let { type, name } = context.args
-    const types = ['command', 'event', 'context-menu', 'precondition']
+    const types = [
+      'command',
+      'event',
+      'context-menu',
+      'button',
+      'modal',
+      'select-menu',
+      'precondition'
+    ]
 
     name = name.replace(/(\.ts)$/g, '')
     if (!types.includes(type)) {
@@ -55,13 +63,10 @@ export default defineCommand({
         filePath,
         "import { defineCommand } from '@harmonix-js/core'\n\n" +
           'export default defineCommand({\n' +
-          "  description: 'Description here',\n" +
-          '  args: [\n' +
-          '    // Arguments here\n' +
-          '  ],\n' +
+          "  description: 'Description here'\n" +
           '}, () => {\n' +
           '  // Code here\n' +
-          '})'
+          '})\n'
       )
     } else if (type === 'event') {
       const filePath = `./${type}s/${name}.ts`
@@ -75,7 +80,7 @@ export default defineCommand({
         "import { defineEvent } from '@harmonix-js/core'\n\n" +
           'export default defineEvent(() => {\n' +
           '  // Code here\n' +
-          '})'
+          '})\n'
       )
     } else if (type === 'context-menu') {
       const filePath = `./${type}s/${name}.ts`
@@ -89,7 +94,61 @@ export default defineCommand({
         "import { defineContextMenu } from '@harmonix-js/core'\n\n" +
           'export default defineContextMenu((interaction) => {\n' +
           '  // Code here\n' +
-          '})'
+          '})\n'
+      )
+    } else if (type === 'button') {
+      const filePath = `./${type}s/${name}.ts`
+
+      if (fs.existsSync(filePath)) {
+        consola.error('Button already exists')
+        process.exit(1)
+      }
+      fs.writeFileSync(
+        filePath,
+        "import { defineButton } from '@harmonix-js/core'\n\n" +
+          "export default defineButton({ label: '' }, (interaction) => {\n" +
+          '  // Code here\n' +
+          '})\n'
+      )
+    } else if (type === 'modal') {
+      const filePath = `./${type}s/${name}.ts`
+
+      if (fs.existsSync(filePath)) {
+        consola.error('Modal already exists')
+        process.exit(1)
+      }
+      fs.writeFileSync(
+        filePath,
+        "import { defineModal } from '@harmonix-js/core'\n\n" +
+          'export default defineModal(' +
+          '  {\n' +
+          "    title: 'Title here',\n" +
+          '    inputs: {}\n' +
+          '  },\n' +
+          '  (interaction) => {\n' +
+          '  // Code here\n' +
+          '})\n'
+      )
+    } else if (type === 'select-menu') {
+      const filePath = `./${type}s/${name}.ts`
+
+      if (fs.existsSync(filePath)) {
+        consola.error('Select menu already exists')
+        process.exit(1)
+      }
+      fs.writeFileSync(
+        filePath,
+        "import { defineSelectMenu } from '@harmonix-js/core'\n\n" +
+          'export default defineSelectMenu(\n' +
+          '  {\n' +
+          "    type: 'String',\n" +
+          "    placeholder: 'Your placeholder',\n" +
+          '    options: []\n' +
+          '  },\n' +
+          '  (interaction) => {\n' +
+          '    // Code here\n' +
+          '  }\n' +
+          ')\n'
       )
     } else if (type === 'precondition') {
       const filePath = `./${type}s/${name}.ts`
@@ -101,9 +160,9 @@ export default defineCommand({
       fs.writeFileSync(
         filePath,
         "import { definePrecondition } from '@harmonix-js/core'\n\n" +
-          'export default definePrecondition((harmonixOptions, entity) => {\n' +
+          'export default definePrecondition(({ interaction }) => {\n' +
           '  // Code here\n' +
-          '})'
+          '})\n'
       )
     }
 
