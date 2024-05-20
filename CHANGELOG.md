@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.13
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.12...v0.0.13)
+
+### 🩹 Fixes
+
+- Update dependencies ([d579fab](https://github.com/harmonix-js/cli/commit/d579fab))
+
+### ❤️ Contributors
+
+- Nethriis <david.abou@epitech.eu>
+
 ## v0.0.12
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.11...v0.0.12)
