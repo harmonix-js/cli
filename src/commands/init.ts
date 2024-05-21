@@ -41,7 +41,8 @@ export default defineCommand({
         packageManager: {
           name: selectedPackageManager,
           command: selectedPackageManager
-        }
+        },
+        silent: true
       })
     } catch (err) {
       consola.error((err as Error).toString())
