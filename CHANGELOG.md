@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.0.14
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.13...v0.0.14)
+
+### 🚀 Enhancements
+
+- Add button modal and select-menu add option ([21b4fe7](https://github.com/harmonix-js/cli/commit/21b4fe7))
+- Add update command ([05877d1](https://github.com/harmonix-js/cli/commit/05877d1))
+
+### 🩹 Fixes
+
+- Update dependencies ([514a093](https://github.com/harmonix-js/cli/commit/514a093))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+- Nethriis <david.abou@epitech.eu>
+
 ## v0.0.13
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.12...v0.0.13)
