@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.15
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.14...v0.0.15)
+
+### 🩹 Fixes
+
+- Update dependencies ([8369dac](https://github.com/harmonix-js/cli/commit/8369dac))
+
+### 📖 Documentation
+
+- Add license ([2146e14](https://github.com/harmonix-js/cli/commit/2146e14))
+
+### ❤️ Contributors
+
+- Nethriis <david.abou@epitech.eu>
+- Nethris <david.abou@epitech.eu>
+
 ## v0.0.14
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.13...v0.0.14)
