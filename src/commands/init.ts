@@ -51,6 +51,6 @@ export default defineCommand({
     consola.success('Installation completed.')
     consola.log(`✨ Harmonix project has been created. Next steps:`)
     consola.log(` › cd ${ctx.args.dir}`)
-    consola.log(` › ${selectedPackageManager} run start`)
+    consola.log(` › ${selectedPackageManager} run dev`)
   }
 })
