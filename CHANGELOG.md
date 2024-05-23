@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.16
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.15...v0.0.16)
+
+### 🚀 Enhancements
+
+- Change start command to dev ([7a5af14](https://github.com/harmonix-js/cli/commit/7a5af14))
+
+### 🩹 Fixes
+
+- Update dependencies ([d38b7ff](https://github.com/harmonix-js/cli/commit/d38b7ff))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+- Nethriis <david.abou@epitech.eu>
+
 ## v0.0.15
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.14...v0.0.15)
