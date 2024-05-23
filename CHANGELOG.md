@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.17
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.16...v0.0.17)
+
+### 🩹 Fixes
+
+- Start bot step ([32fe2c9](https://github.com/harmonix-js/cli/commit/32fe2c9))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+
 ## v0.0.16
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.15...v0.0.16)
