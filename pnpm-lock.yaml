@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@harmonix-js/core':
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^0.0.15
+        version: 0.0.15
       citty:
         specifier: ^0.1.6
         version: 0.1.6
@@ -441,8 +441,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@harmonix-js/core@0.0.14':
-    resolution: {integrity: sha512-gbPIKyv+Fr9ffDtOa0MV0jE0z0zylfn3W7W67BcU0lH+YKAMXNbr/HVnkk6mZZyXw8Fr1egnxhV0cGGuA8sZHg==}
+  '@harmonix-js/core@0.0.15':
+    resolution: {integrity: sha512-Ej+crtS36WpY1AlGCbqRK7ttEcYSmkz7rXU24kx/tFLnjSWtW8pHXl+pcWD6g4QM3tiLpdO7fkuVcCTwMxDZYg==}
     engines: {node: ^16.0.0 || >=18.0.0}
 
   '@jridgewell/gen-mapping@0.3.5':
@@ -1945,15 +1945,17 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
-  '@harmonix-js/core@0.0.14':
+  '@harmonix-js/core@0.0.15':
     dependencies:
       c12: 1.10.0
+      chokidar: 3.6.0
       consola: 3.2.3
       discord.js: 14.15.2
       dotenv: 16.4.5
       globby: 14.0.1
       jiti: 1.21.0
       pathe: 1.1.2
+      perfect-debounce: 1.0.0
       unctx: 2.3.1
     transitivePeerDependencies:
       - bufferutil
