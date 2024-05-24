@@ -683,8 +683,11 @@ packages:
     os: [win32]
 
   '@harmonix-js/core@0.0.16':
-    resolution: {integrity: sha512-9cXmkuJ061+Esl0HsIhAkziDugf6qfrvyTRrYRsXw6GExuiGtDQX9/ElCo6GZRYb1sYZANABqAgTGGdjLjQFOQ==}
-    engines: {node: ^16.0.0 || >=18.0.0}
+    resolution:
+      {
+        integrity: sha512-9cXmkuJ061+Esl0HsIhAkziDugf6qfrvyTRrYRsXw6GExuiGtDQX9/ElCo6GZRYb1sYZANABqAgTGGdjLjQFOQ==
+      }
+    engines: { node: ^16.0.0 || >=18.0.0 }
 
   '@jridgewell/gen-mapping@0.3.5':
     resolution:
