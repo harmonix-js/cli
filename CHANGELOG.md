@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.18
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.17...v0.0.18)
+
+### 🚀 Enhancements
+
+- Add build command ([f79d6f4](https://github.com/harmonix-js/cli/commit/f79d6f4))
+
+### 🩹 Fixes
+
+- Update dependencies ([066148e](https://github.com/harmonix-js/cli/commit/066148e))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+- Nethriis <david.abou@epitech.eu>
+
 ## v0.0.17
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.16...v0.0.17)
