@@ -17,8 +17,8 @@ export default defineCommand({
       description: 'Name of the file to be created'
     }
   },
-  async run(context) {
-    let { type, name } = context.args
+  async run(ctx) {
+    let { type, name } = ctx.args
     const types = [
       'command',
       'event',

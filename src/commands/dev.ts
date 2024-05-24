@@ -1,5 +1,5 @@
 import { defineCommand } from 'citty'
-import { createDevHarmonix } from '@harmonix-js/core'
+import { createHarmonix } from '@harmonix-js/core'
 
 export default defineCommand({
   meta: {
@@ -13,10 +13,9 @@ export default defineCommand({
       default: '.'
     }
   },
-  async run(context) {
-    await createDevHarmonix(
-      { rootDir: context.args.dir },
-      { cwd: context.args.dir }
-    )
+  async run(ctx) {
+    process.env.NODE_ENV = 'development'
+
+    await createHarmonix({ rootDir: ctx.args.dir }, { cwd: ctx.args.dir })
   }
 })
