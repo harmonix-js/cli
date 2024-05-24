@@ -24,7 +24,7 @@
     "release": "changelogen --release"
   },
   "dependencies": {
-    "@harmonix-js/core": "^0.0.15",
+    "@harmonix-js/core": "^0.0.16",
     "citty": "^0.1.6",
     "consola": "^3.2.3",
     "fs-extra": "^11.2.0",
