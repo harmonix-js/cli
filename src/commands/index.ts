@@ -7,5 +7,6 @@ export const commands = {
   dev: () => import('./dev').then(_default),
   build: () => import('./build').then(_default),
   add: () => import('./add').then(_default),
-  update: () => import('./update').then(_default)
+  update: () => import('./update').then(_default),
+  invite: () => import('./invite').then(_default)
 } as const
