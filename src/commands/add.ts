@@ -5,12 +5,12 @@ import fs, { ensureDir } from 'fs-extra'
 export default defineCommand({
   meta: {
     name: 'add',
-    description: 'Add a new command or event to the project'
+    description: 'Add a new file to the project'
   },
   args: {
     type: {
       type: 'positional',
-      description: 'Type of the file to be created (command or event)'
+      description: 'Type of the file to be created (command, event, context-menu, button, modal, select-menu, precondition)',
     },
     name: {
       type: 'positional',
