@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.0.19
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.0.18...v0.0.19)
+
+### 🚀 Enhancements
+
+- Add invite command to generate invite link ([723bfe3](https://github.com/harmonix-js/cli/commit/723bfe3))
+
+### 🩹 Fixes
+
+- Remove useless package scule ([60615cd](https://github.com/harmonix-js/cli/commit/60615cd))
+- Enhance add command ([4c73c82](https://github.com/harmonix-js/cli/commit/4c73c82))
+- 'add' command descriptions ([5773096](https://github.com/harmonix-js/cli/commit/5773096))
+
+### 🤖 CI
+
+- Change commit message for deps update ([515f541](https://github.com/harmonix-js/cli/commit/515f541))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+
 ## v0.0.18
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.17...v0.0.18)
