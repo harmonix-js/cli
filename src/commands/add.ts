@@ -10,7 +10,8 @@ export default defineCommand({
   args: {
     type: {
       type: 'positional',
-      description: 'Type of the file to be created (command, event, context-menu, button, modal, select-menu, precondition)',
+      description:
+        'Type of the file to be created (command, event, context-menu, button, modal, select-menu, precondition)'
     },
     name: {
       type: 'positional',
