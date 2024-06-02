@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.1.0...v0.1.1)
+
 ## v0.1.0
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.0.20...v0.1.0)
