@@ -24,7 +24,7 @@
     "release": "changelogen --release"
   },
   "dependencies": {
-    "@harmonix-js/core": "^0.1.0",
+    "@harmonix-js/core": "^0.1.1",
     "citty": "^0.1.6",
     "consola": "^3.2.3",
     "dotenv": "^16.4.5",
