@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.1.2
+
+[compare changes](https://github.com/harmonix-js/cli/compare/v0.1.1...v0.1.2)
+
+### 🚀 Enhancements
+
+- Regroups components ([a42266f](https://github.com/harmonix-js/cli/commit/a42266f))
+
+### 🤖 CI
+
+- Add commitlint workflow ([7a7c823](https://github.com/harmonix-js/cli/commit/7a7c823))
+
+### ❤️ Contributors
+
+- Nethris <david.abou@epitech.eu>
+
 ## v0.1.1
 
 [compare changes](https://github.com/harmonix-js/cli/compare/v0.1.0...v0.1.1)
