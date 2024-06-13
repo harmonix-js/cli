@@ -95,7 +95,7 @@ export default defineCommand({
         break
       }
       case 'button': {
-        const filePath = `./${type}s/${name}.ts`
+        const filePath = `./components/${type}s/${name}.ts`
 
         if (fs.existsSync(filePath)) {
           consola.error('Button already exists')
@@ -111,7 +111,7 @@ export default defineCommand({
         break
       }
       case 'modal': {
-        const filePath = `./${type}s/${name}.ts`
+        const filePath = `./components/${type}s/${name}.ts`
 
         if (fs.existsSync(filePath)) {
           consola.error('Modal already exists')
@@ -132,7 +132,7 @@ export default defineCommand({
         break
       }
       case 'select-menu': {
-        const filePath = `./${type}s/${name}.ts`
+        const filePath = `./components/${type}s/${name}.ts`
 
         if (fs.existsSync(filePath)) {
           consola.error('Select menu already exists')
