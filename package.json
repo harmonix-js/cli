@@ -18,14 +18,14 @@
     "dist"
   ],
   "scripts": {
-    "lint": "prettier --write .",
+    "format": "prettier --write .",
     "build": "unbuild",
     "harmonix": "node ./bin/harmonix.mjs",
     "prepare": "husky",
     "release": "changelogen --release"
   },
   "dependencies": {
-    "@harmonix-js/core": "^0.3.1",
+    "@harmonix-js/core": "latest",
     "citty": "^0.1.6",
     "consola": "^3.2.3",
     "dotenv": "^16.4.5",
