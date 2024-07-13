@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@harmonix-js/core':
-        specifier: ^0.3.0
-        version: 0.3.0
+        specifier: ^0.3.1
+        version: 0.3.1
       citty:
         specifier: ^0.1.6
         version: 0.1.6
@@ -543,8 +543,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@harmonix-js/core@0.3.0':
-    resolution: {integrity: sha512-aktEHUn4/oab1AbXMvIS7CgGeO0bWMH2+flLgM48iTi+MugI1EJV4XbaINCH8YhQwqT/DphTHD2mYAK7dGS+lg==}
+  '@harmonix-js/core@0.3.1':
+    resolution: {integrity: sha512-J23WzWy7A2IULSSlhybHPgzYi1aWQzOs4jpiqjhcG8p/5nc7hASIxwO14otknQuGb7IGp27NulIUFPlbMqnMJg==}
     engines: {node: ^16.0.0 || >=18.0.0}
 
   '@jridgewell/gen-mapping@0.3.5':
@@ -2465,7 +2465,7 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
-  '@harmonix-js/core@0.3.0':
+  '@harmonix-js/core@0.3.1':
     dependencies:
       c12: 1.10.0
       chokidar: 3.6.0
