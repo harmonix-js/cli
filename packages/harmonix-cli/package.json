@@ -1,0 +1,55 @@
+{
+  "name": "@harmonix-js/cli",
+  "type": "module",
+  "version": "0.1.4",
+  "description": "⚡️ Harmonix Framework CLI Experience",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harmonix-js/cli.git",
+    "directory": "packages/harmonix-cli"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/harmonix.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "harmonix": "./bin/harmonix.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "engines": {
+    "node": "^16.10.0 || >=18.0.0"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "build:stub": "unbuild --stub",
+    "harmonix": "node ./bin/harmonix.mjs",
+    "prepack": "unbuild"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.12.11",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "@harmonix-js/core": "latest",
+    "citty": "^0.1.6",
+    "consola": "^3.2.3",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "giget": "^1.2.3",
+    "gzip-size": "^7.0.0",
+    "nypm": "^0.6.0",
+    "ofetch": "^1.3.4",
+    "open": "^10.1.0",
+    "pathe": "^1.1.2",
+    "pretty-bytes": "^6.1.1",
+    "std-env": "^3.9.0",
+    "tinyexec": "^1.0.1"
+  }
+}

@@ -1,56 +1,29 @@
 {
-  "name": "@harmonix-js/cli",
-  "version": "0.1.4",
-  "description": "⚡️ Harmonix Framework CLI Experience",
-  "repository": "harmonix-js/cli",
-  "license": "MIT",
+  "name": "harmonix-workspace",
   "type": "module",
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./cli": "./bin/harmonix.mjs"
-  },
-  "types": "./dist/index.d.ts",
-  "bin": {
-    "harmonix": "./bin/harmonix.mjs"
-  },
-  "files": [
-    "bin",
-    "dist"
-  ],
+  "private": true,
+  "description": "⚡️ Harmonix Framework CLI Experience",
+  "license": "MIT",
+  "repository": "harmonix-js/cli",
   "scripts": {
+    "build": "pnpm -r build",
+    "build:stub": "pnpm -r build:stub",
+    "harmonix": "node ./packages/harmonix-cli/bin/harmonix.mjs",
+    "prepack": "pnpm -r build",
     "format": "prettier --write .",
-    "build": "unbuild",
-    "harmonix": "node ./bin/harmonix.mjs",
     "prepare": "husky",
     "release": "changelogen --release"
-  },
-  "dependencies": {
-    "@harmonix-js/core": "latest",
-    "citty": "^0.1.6",
-    "consola": "^3.2.3",
-    "dotenv": "^16.4.5",
-    "fs-extra": "^11.2.0",
-    "giget": "^1.2.3",
-    "gzip-size": "^7.0.0",
-    "nypm": "^0.3.8",
-    "ofetch": "^1.3.4",
-    "open": "^10.1.0",
-    "pathe": "^1.1.2",
-    "pretty-bytes": "^6.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.12.11",
+    "@types/node": "^22.12.0",
     "changelogen": "^0.5.5",
     "husky": "^9.0.11",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5",
-    "unbuild": "^2.0.0"
+    "prettier": "^3.2.5"
   },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": "^16.10.0 || >=18.0.0"
+  "resolutions": {
+    "@harmonix/cli": "workspace:*",
+    "create-harmonix": "workspace:*"
   }
 }

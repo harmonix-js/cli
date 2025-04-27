@@ -1,0 +1,40 @@
+{
+  "name": "create-harmonix",
+  "type": "module",
+  "version": "0.1.4",
+  "description": "⚡️ Harmonix Framework CLI Experience",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harmonix-js/cli.git",
+    "directory": "packages/create-harmonix"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/create-harmonix.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "create-harmonix": "./bin/create-harmonix.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "engines": {
+    "node": "^16.10.0 || >=18.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "unbuild",
+    "harmonix": "node ./bin/harmonix.mjs"
+  },
+  "dependencies": {
+    "citty": "^0.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  }
+}
