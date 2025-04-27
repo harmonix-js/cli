@@ -10,7 +10,7 @@
     "build:stub": "pnpm -r build:stub",
     "harmonix": "node ./packages/harmonix-cli/bin/harmonix.mjs",
     "prepack": "pnpm -r build",
-    "format": "prettier --write .",
+    "format:write": "prettier --write .",
     "prepare": "husky",
     "release": "changelogen --release"
   },

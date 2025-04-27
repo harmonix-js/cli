@@ -1,13 +1,13 @@
-import consola, { type ConsolaReporter } from "consola"
+import consola, { type ConsolaReporter } from 'consola'
 
 const wrapReporter = (reporter: ConsolaReporter) => {
-  return ({
+  return {
     log: (logObj, ctx) => {
       if (!logObj.args || !logObj.args.length) return
 
       return reporter.log(logObj, ctx)
     }
-  }) satisfies ConsolaReporter
+  } satisfies ConsolaReporter
 }
 
 export const setupGlobalConsole = (opts: { dev?: boolean } = {}) => {

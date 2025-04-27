@@ -55,21 +55,32 @@ export default defineCommand({
       process.stdout.write(`\n${harmonixIcon}\n\n`)
     }
 
-    logger.info(colors.bold(`Welcome to Harmonix!`.split('').map((m) => `${themeColor}${m}`).join('')))
+    logger.info(
+      colors.bold(
+        `Welcome to Harmonix!`
+          .split('')
+          .map((m) => `${themeColor}${m}`)
+          .join('')
+      )
+    )
 
     if (ctx.args.dir === '') {
-      ctx.args.dir = await logger.prompt('Where would you like to create your project?', {
-        placeholder: './harmonix-bot',
-        type: 'text',
-        default: 'harmonix-bot',
-        cancel: 'reject'
-      }).catch(() => process.exit(1))
+      ctx.args.dir = await logger
+        .prompt('Where would you like to create your project?', {
+          placeholder: './harmonix-bot',
+          type: 'text',
+          default: 'harmonix-bot',
+          cancel: 'reject'
+        })
+        .catch(() => process.exit(1))
     }
 
     const cwd = resolve(ctx.args.cwd)
     const templateDownloadPath = resolve(cwd, ctx.args.dir)
 
-    logger.info(`Creating a new project in ${colors.cyan(relative(cwd, templateDownloadPath) || templateDownloadPath)}.`)
+    logger.info(
+      `Creating a new project in ${colors.cyan(relative(cwd, templateDownloadPath) || templateDownloadPath)}.`
+    )
 
     let template: DownloadTemplateResult
 
@@ -87,7 +98,7 @@ export default defineCommand({
     const detectCurrentPackageManager = () => {
       const userAgent = process.env.npm_config_user_agent
 
-      if (!userAgent)  return
+      if (!userAgent) return
       const [name] = userAgent.split('/')
 
       if (packageManagerOptions.includes(name as PackageManagerName)) {
@@ -97,19 +108,26 @@ export default defineCommand({
 
     const currentPackageManager = detectCurrentPackageManager()
     const packageManagerArg = ctx.args.packageManager as PackageManagerName
-    const packageManagerSelectOptions = packageManagerOptions.map((pm) => ({
-      label: pm,
-      value: pm,
-      hint: currentPackageManager === pm ? 'current' : undefined
-    } satisfies SelectPromptOptions['options'][number]))
-    const selectedPackageManager = packageManagerOptions.includes(packageManagerArg)
+    const packageManagerSelectOptions = packageManagerOptions.map(
+      (pm) =>
+        ({
+          label: pm,
+          value: pm,
+          hint: currentPackageManager === pm ? 'current' : undefined
+        }) satisfies SelectPromptOptions['options'][number]
+    )
+    const selectedPackageManager = packageManagerOptions.includes(
+      packageManagerArg
+    )
       ? packageManagerArg
-      : await logger.prompt('Which package manager would you like to use?', {
-          type: 'select',
-          options: packageManagerSelectOptions,
-          initial: currentPackageManager,
-          cancel: 'reject'
-        }).catch(() => process.exit(1))
+      : await logger
+          .prompt('Which package manager would you like to use?', {
+            type: 'select',
+            options: packageManagerSelectOptions,
+            initial: currentPackageManager,
+            cancel: 'reject'
+          })
+          .catch(() => process.exit(1))
 
     if (!ctx.args.install) {
       logger.info('Skipping install dependencies step.')
@@ -135,10 +153,12 @@ export default defineCommand({
     }
 
     if (ctx.args.gitInit === undefined) {
-      ctx.args.gitInit = await logger.prompt('Initialize a git repository?', {
-        type: 'confirm',
-        cancel: 'reject'
-      }).catch(() => process.exit(1))
+      ctx.args.gitInit = await logger
+        .prompt('Initialize a git repository?', {
+          type: 'confirm',
+          cancel: 'reject'
+        })
+        .catch(() => process.exit(1))
     }
 
     if (ctx.args.gitInit) {
@@ -158,9 +178,8 @@ export default defineCommand({
     const relativeTemplateDir = relative(process.cwd(), template.dir) || '.'
     const runCmd = selectedPackageManager === 'deno' ? 'task' : 'run'
     const nextSteps = [
-      relativeTemplateDir.length > 1
-      && `\`cd ${relativeTemplateDir}\``,
-      `Start development bot with \`${selectedPackageManager} ${runCmd} dev\``,
+      relativeTemplateDir.length > 1 && `\`cd ${relativeTemplateDir}\``,
+      `Start development bot with \`${selectedPackageManager} ${runCmd} dev\``
     ].filter(Boolean)
 
     for (const step of nextSteps) {

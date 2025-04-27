@@ -11,4 +11,6 @@ const icon = [
   `   'x$@/   \\@$x'`
 ]
 
-export const harmonixIcon = icon.map((line) => line.split('').join(themeColor)).join('\n')
+export const harmonixIcon = icon
+  .map((line) => line.split('').join(themeColor))
+  .join('\n')
